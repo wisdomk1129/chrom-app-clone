@@ -1,0 +1,14 @@
+.clock {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.clock__time {
+    font-size: 80px;
+}
+
+.clock__ampm {
+    font-size: 40px;
+    margin-right: 4px;
+}

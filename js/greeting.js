@@ -27,9 +27,3 @@ if (savedUsername === null) {
 else {
     greetingShow(savedUsername);
 }
-
-//rest btn을 click하면
-//alert("닉네임, to do list가 초기화 됩니다");
-//if (yes)
-//localStorage.clear();
-//confirm();으로 만들기 boolean을 반환함

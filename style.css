@@ -3,6 +3,16 @@
 /* settings */
 @import "css/reset.css";
 @import "css/variables.css";
+/* components */
+@import "css/weather.css";
+@import "css/clock.css";
+@import "css/date.css";
+@import "css/loginform.css";
+@import "css/todosettingform.css";
+@import "css/todolist.css";
+@import "css/quote.css";
+@import "css/greeting.css";
+@import "css/btns.css";
 
 .hidden {
     display: none;
@@ -19,8 +29,16 @@
     z-index: -1;
 }
 
+.dark {
+    filter: grayscale(100%);
+}
+
 body {
     font-family: 'Playfair Display', serif;
     color: var(--color);
     font-weight: var(--bold);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px;
 }

@@ -1,0 +1,39 @@
+.todo-list-box {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    padding: 12px;
+    background-color: var(--color-reverse-bg);
+    border-radius: 20px;
+}
+
+.todo-list-box .todo-list__title {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.todo-list {
+    font-size: 20px;
+    overflow: scroll;
+    width: 320px;
+    height: 320px;
+    box-sizing: border-box;
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.todo-list li input {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.todo-list li button {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}

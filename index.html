@@ -8,23 +8,35 @@
 </head>
 
 <body>
-    <h1 class="hidden greeting"></h1>
     <div class="weather">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="weather__temp"></span>
+        <span class="weather__weather"></span>
+        <div class="weather__city">
+            <span></span>
+        </div>
     </div>
+    <h2 class="clock">
+        <span class="clock__ampm"></span>
+        <span class="clock__time"></span>
+    </h2>
+    <h3 class="date"></h3>
+    <h1 class="hidden greeting"></h1>
     <form class="hidden login-form">
         <input required maxlength="15" type="text" placeholder="Whiat is your name?" />
-        <input type="submit" value="Log in" />
+        <button>Log in</button>
     </form>
     <form class="todosetting-form">
-        <input required type="text" placeholder="Write a To do and Press enter" />
+        <input required type="text" placeholder="Write a To do and Press Enter" />
     </form>
-    <ul class="todo-list">
-    </ul>
-    <h2 class="clock"></h2>
-    <h3 class="date"></h3>
+    <div class="todo-list-box">
+        <span class="todo-list__title">Today's work</span>
+        <ul class="todo-list">
+        </ul>
+    </div>
+    <div class="btns">
+        <button class="btns__modebtn">Dark</button>
+        <button class="btns__resetbtn">Reset</button>
+    </div>
     <div class="quotes">
         <span></span>
         <span></span>
@@ -36,6 +48,7 @@
     <script src="js/background.js"></script>
     <script src="js/todolist.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/btn.js"></script>
 </body>
 
 </html>

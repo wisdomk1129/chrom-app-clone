@@ -134,8 +134,21 @@ table {
     border-spacing: 0;
 }
 
-input {
+input,
+button {
     border: none;
     outline: none;
-    background-color: var(--color-reverse);
+    font-family: 'Playfair Display', serif;
+    color: var(--color-bg);
+    font-size: 20px;
+    font-weight: var(--bold);
+    background-color: var(--color-reverse-bg);
+    box-shadow: 2px 2px 4px var(--color-bg);
+    border-radius: 10px;
+}
+
+input::placeholder {
+    font-size: 20px;
+    font-weight: var(--bold);
+    text-align: center;
 }

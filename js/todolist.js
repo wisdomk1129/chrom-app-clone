@@ -23,7 +23,10 @@ function makingToDo(toDoObject) {
     const toDoListSpan = document.createElement("span");
     toDoListSpan.innerText = toDoObject.toDo;
     const toDoListBtn = document.createElement("button");
-    toDoListBtn.innerText = "✖️";
+    toDoListBtn.innerText = "🌊";
+    const toDOListCheck = document.createElement("input");
+    toDOListCheck.type = "checkbox";
+    toDoListItem.appendChild(toDOListCheck);
     toDoListItem.appendChild(toDoListSpan);
     toDoListItem.appendChild(toDoListBtn);
     toDoList.appendChild(toDoListItem);

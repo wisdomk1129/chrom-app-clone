@@ -1,6 +1,6 @@
-const temp = document.querySelector(".weather span:first-child");
-const weather = document.querySelector(".weather span:nth-child(2)");
-const city = document.querySelector(".weather span:last-child");
+const temp = document.querySelector(".weather__temp");
+const weather = document.querySelector(".weather__weather");
+const city = document.querySelector(".weather__city span");
 
 function onGeoSuccess(userLocation) {
     const lat = userLocation.coords.latitude;
@@ -9,7 +9,7 @@ function onGeoSuccess(userLocation) {
     fetch(apiCall)
         .then(response => response.json())
         .then(data => {
-            temp.innerText = `${data.main.temp}°C`;
+            temp.innerText = `${data.main.temp}°C /`;
             weather.innerText = data.weather[0].main;
             city.innerText = data.name;
         })

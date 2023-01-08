@@ -2,5 +2,7 @@
     --regular: 500;
     --bold: 700;
     --color: #0A0A0A;
-    --color-reverse: #f5f5f5;
+    --color-bg: rgba(10, 10, 10, 0.8);
+    --color-reverse: white;
+    --color-reverse-bg: rgba(255, 255, 255, 0.8);
 }
