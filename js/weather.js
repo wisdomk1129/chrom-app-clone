@@ -9,7 +9,7 @@ function onGeoSuccess(userLocation) {
     fetch(apiCall)
         .then(response => response.json())
         .then(data => {
-            temp.innerText = data.main.temp;
+            temp.innerText = `${data.main.temp}°C`;
             weather.innerText = data.weather[0].main;
             city.innerText = data.name;
         })
